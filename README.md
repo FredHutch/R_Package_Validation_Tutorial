@@ -5,9 +5,9 @@ By the end of this tutorial, you will know how to apply the R Package Validation
 
 The tutorial comprises of 4 sections:
 
-1. Review packaging concepts
-  - package elements & structure: usethis/devtools (10 min talk + 10 min exercises)
-  - documentation: roxygen2/devtools (10 min talk + 10 min exercises)
+1. Review Packaging Concepts
+  - [Package Elements & Structure](S1_1.md) (10 min talk + 10 min exercises)
+  - [Package Documentation](S1_2.md) (10 min talk + 10 min exercises)
   - deployment: binary vs source (10 min talk + 10 min exercises)
   
 2. R Package validation
