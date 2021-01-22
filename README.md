@@ -11,15 +11,14 @@ The tutorial comprises of 4 sections:
     - [Package Deployment](S1_3.md) (10 min talk + 10 min exercises)
   
 2. R Package validation
-    - Background discussion: Ellis' talk (25 min)
+    - [The Framework](S2_1.md) (40 min)
       - based on 
         - [RStudio 2021 slides](https://thebioengineer.github.io/validation_studio_2021)
         - [RStudio 2020 presentation](https://rstudio.com/resources/rstudioconf-2020/approaches-to-assay-processing-package-validation/)
-    - Q&A session (15 min)
   
 3. R Package Validation in Practice
-    - Exercises: new validated pkg (45 min)
-    - advanced exercise: validate via RStudio cloud for an old version of R (15 min)
+    - [Introduction to {valtools}](S3_1.md) (60 min)
+    - [Advanced Exercises](S3_2.md) (15 min)
   
 4. Close out talk (10 min)
     - interactive validation options 
