@@ -15,8 +15,8 @@ package.
 | ----------------------------------- |
 | :spiral\_calendar: UseR\!2021       |
 | :alarm\_clock: TBD                  |
-| :technologist: @thebioengineer      |
-| :technologist: @mariev              |
+| :technologist: [@thebioengineer](https://github.com/thebioengineer)  |
+| :female-technologist: [@mariev](https://github.com/mariev)|
 | :speech\_balloon: slack channel TBD |
 
 ## Schedule
