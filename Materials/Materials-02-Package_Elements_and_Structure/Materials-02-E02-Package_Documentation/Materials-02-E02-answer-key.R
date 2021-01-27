@@ -19,7 +19,7 @@
 # This keeps us on track for the remainder of the tutorial
 
 # add  license info
-usetthis::use_mit_license(name = "A Developer")
+usethis::use_mit_license(copyright_holder = "A Developer")
 
 # add hello_world to NAMESPACE
 devtools::document()
