@@ -1,4 +1,4 @@
-########### Task 03_A
+########### Task 02_E02_A
 # Add a help page for the function `hello_world` using roxygen tags
 # include the custom sections "Last updated by" and "Last updated date"
 # with values on subsequent line.
@@ -14,7 +14,7 @@
 #' 1900-01-01
 #' @export
 
-########### Task 03_B
+########### Task 02_E02_B
 # Housekeeping: Make sure that this package passes devtools::check()
 # This keeps us on track for the remainder of the tutorial
 
@@ -27,7 +27,7 @@ devtools::document()
 # perform the check
 devtools::check()
 
-########### Task 03_C
+########### Task 02_E02_C
 # Add a vignette that runs `hello_world`. 
 
 # create the vignette template
