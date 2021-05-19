@@ -19,7 +19,7 @@ Validation Framework to your internal R packages, and apply the
 
 |                                     |
 |-------------------------------------|
-| :spiral\_calendar: Cascadia R Conf, Friday June 4th      |
+| :spiral\_calendar: [Cascadia R Conf](https://cascadiarconf.com/agenda/), Friday June 4th      |
 | :alarm\_clock: 10A-12P (part 1) & 1:30P-3:30P (part 2)                 |
 | :man_technologist: [@thebioengineer](https://github.com/thebioengineer)      |
 | :woman_technologist: [@mariev](https://github.com/mariev)              |
