@@ -19,10 +19,10 @@ Validation Framework to your internal R packages, and apply the
 
 |                                     |
 |-------------------------------------|
-| :spiral\_calendar: UseR!2021        |
-| :alarm\_clock: TBD                  |
-| :technologist: @thebioengineer      |
-| :technologist: @mariev              |
+| :spiral\_calendar: Cascadia R Conf, Friday June 4th      |
+| :alarm\_clock: 10A-12P (part 1) & 1:30P-3:30P (part 2)                 |
+| :man_technologist: [@thebioengineer](https://github.com/thebioengineer)      |
+| :woman_technologist: [@mariev](https://github.com/mariev)              |
 | :speech\_balloon: slack channel TBD |
 
 ## Schedule & Materials
@@ -39,10 +39,9 @@ information provided. An answer key is also provided in the folder.
 | 10 - 70   | **Package Elements & Structure**     | Package Elements & Structure                       | Make a basic package            |
 |           |                                      | Package Documentation                              | Documenting a package           |
 |           |                                      | Deploying R Packages                               | Exploring Installation sources  |
-| 70 - 75   | *Break*                              |                                                    |                                 |
-| 75 - 115  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
-| 115 - 130 | *Break*                              |                                                    |                                 |
-| 130 - 185 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
+| 70 - 120  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
+| LUNCH | *Digital Track: Lunch & Learn*                              |                                                    |                                 |
+| 120 - 185 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
 |           |                                      | Structure of Test Cases and Code                   | Writing test code               |
 |           |                                      | Elements of a Validation Report                    | Creating a validation report    |
 | 185 - 190 | *Break*                              |                                                    |                                 |
