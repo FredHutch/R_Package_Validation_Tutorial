@@ -36,16 +36,16 @@ information provided. An answer key is also provided in the folder.
 | Time      | Section                              | Slides                                             | Exercises                       |
 |:----------|:-------------------------------------|----------------------------------------------------|:--------------------------------|
 | 0 - 10    | **Welcome and Orientation**          |                                                    |                                 |
-| 10 - 70   | **Package Elements & Structure**     | Package Elements & Structure                       | Make a basic package            |
-|           |                                      | Package Documentation                              | Documenting a package           |
-|           |                                      | Deploying R Packages                               | Exploring Installation sources  |
+| 10 - 70   | **Package Elements & Structure**     | Package Elements & Structure                       | 02-E01: [Make a basic package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E01-Package_Basics)            |
+|           |                                      | Package Documentation                              | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
+|           |                                      | Deploying R Packages                               | 02-E03: [Exploring Installation sources](Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
 | 70 - 120  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
-| LUNCH | *Digital Track: Lunch & Learn*                              |                                                    |                                 |
+| LUNCH | *Digital Track: Lunch & Learn*           |                                                    |                                 |
 | 120 - 185 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
-|           |                                      | Structure of Test Cases and Code                   | Writing test code               |
-|           |                                      | Elements of a Validation Report                    | Creating a validation report    |
+|           |                                      | Structure of Test Cases and Code                   | 04-E01: [Writing test code](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code)               |
+|           |                                      | Elements of a Validation Report                    | 04-E02: [Creating a validation report](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E02-Validation_Report)    |
 | 185 - 190 | *Break*                              |                                                    |                                 |
-| 190 - 210 |                                      | Re-Validating a Package                            | Validation in a new environment |
+| 190 - 210 |                                      | Re-Validating a Package                            | 04-E03: [Validation in a new environment](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E03-Validation_Report) |
 | 210 - 240 | **Closeout**                         |                                                    |                                 |
 
 ## Setup
