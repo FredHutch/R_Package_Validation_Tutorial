@@ -1,4 +1,4 @@
 *.pdf
 *.tex
 *.log
-**/Requirement_001.md
+*/*/*/Requirement_001.md
