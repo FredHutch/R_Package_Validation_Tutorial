@@ -1,6 +1,3 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # R Package Validation Tutorial
 
 ## Overview
@@ -19,11 +16,11 @@ Validation Framework to your internal R packages, and apply the
 
 |                                     |
 |-------------------------------------|
-| :spiral\_calendar: UseR!2021        |
-| :alarm\_clock: TBD                  |
-| :technologist: @thebioengineer      |
-| :technologist: @mariev              |
-| :speech\_balloon: slack channel TBD |
+| :spiral\_calendar: [Cascadia R Conf](https://cascadiarconf.com/agenda/), Friday June 4th      |
+| :alarm\_clock: 10A-12P (part 1) & 1:30P-3:30P (part 2)                 |
+| :man_technologist: [@thebioengineer](https://github.com/thebioengineer)      |
+| :woman_technologist: [@mariev](https://github.com/mariev)              |
+| :speech\_balloon: [slack](https://app.slack.com/client/T5FG0LBND/C0224NFG5TR) |
 
 ## Schedule & Materials
 
@@ -36,17 +33,17 @@ information provided. An answer key is also provided in the folder.
 | Time      | Section                              | Slides                                             | Exercises                       |
 |:----------|:-------------------------------------|----------------------------------------------------|:--------------------------------|
 | 0 - 10    | **Welcome and Orientation**          |                                                    |                                 |
-| 10 - 70   | **Package Elements & Structure**     | Package Elements & Structure                       | Make a basic package            |
-|           |                                      | Package Documentation                              | Documenting a package           |
-|           |                                      | Deploying R Packages                               | Exploring Installation sources  |
-| 70 - 75   | *Break*                              |                                                    |                                 |
-| 75 - 115  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
-| 115 - 130 | *Break*                              |                                                    |                                 |
-| 130 - 185 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
-|           |                                      | Structure of Test Cases and Code                   | Writing test code               |
-|           |                                      | Elements of a Validation Report                    | Creating a validation report    |
-| 185 - 190 | *Break*                              |                                                    |                                 |
-| 190 - 210 |                                      | Re-Validating a Package                            | Validation in a new environment |
+| 10 - 70   | **Package Elements & Structure**     | Package Elements & Structure                       | 02-E01: [Make a basic package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E01-Package_Basics)            |
+|           |                                      | Package Documentation                              | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
+|           |                                      | Deploying R Packages                               | 02-E03: [Exploring Installation sources](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
+| 70 - 80 | *Break* | |
+| 80 - 120  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
+| LUNCH | *Digital Track: Lunch & Learn*           |                                                    |                                 |
+| 120 - 180 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
+|           |                                      | Structure of Test Cases and Code                   | 04-E01: [Writing test code](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code)               |
+|           |                                      | Elements of a Validation Report                    | 04-E02: [Creating a validation report](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E02-Validation_Report)    |
+| 180 - 190 | *Break*                              |                                                    |                                 |
+| 190 - 210 |                                      | Re-Validating a Package                            | 04-E03: [Validation in a new environment](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E03-Validation_New_Environment) |
 | 210 - 240 | **Closeout**                         |                                                    |                                 |
 
 ## Setup
