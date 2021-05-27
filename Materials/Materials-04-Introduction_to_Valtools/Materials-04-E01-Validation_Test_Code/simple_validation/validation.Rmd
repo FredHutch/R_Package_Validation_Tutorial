@@ -37,6 +37,7 @@ opts_chunk$set(
   echo = FALSE,
   results = "asis",
   message = FALSE,
+  warning = FALSE,
   tidy = FALSE
 )
 
