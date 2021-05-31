@@ -34,7 +34,7 @@ information provided. An answer key is also provided in the folder.
 |:----------|:-------------------------------------|----------------------------------------------------|:--------------------------------|
 | 0 - 10    | **Welcome and Orientation**          |                                                    |                                 |
 | 10 - 70   | **Package Elements & Structure**     | Package Elements & Structure                       | 02-E01: [Make a basic package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E01-Package_Basics)            |
-|           |                                      | Package Documentation                              | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
+|           |                                      | [Package Documentation](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-02-Package_Documentation)                              | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
 |           |                                      | Deploying R Packages                               | 02-E03: [Exploring Installation sources](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
 | 70 - 80 | *Break* | |
 | 80 - 120  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
