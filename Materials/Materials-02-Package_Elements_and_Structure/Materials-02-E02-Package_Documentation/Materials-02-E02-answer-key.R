@@ -33,7 +33,7 @@ usethis::use_vignette(name = "My-hello-world")
 # save the updated file
 
 ```{r}
-hello_world("someone")?
+hello_world("someone")
 ```
 
 
