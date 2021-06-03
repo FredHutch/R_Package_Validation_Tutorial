@@ -56,7 +56,7 @@ information provided. An answer key is also provided in the folder.
 install.packages(c("devtools", "roxygen2", "testthat", "usethis", "knitr"))
 
 # you will need to install the following packages from github
-remotes::install.packages("phuse-org/valtools")
+remotes::install_github("phuse-org/valtools", build_vignettes = TRUE)
 ```
 
 ## Why take the the R Package Validation Tutorial?
