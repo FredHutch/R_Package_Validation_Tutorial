@@ -87,5 +87,5 @@ practice how validation affects subsequent package releases.
     
 ## Acknowledgments
 
-This workshop was developed by employees of Fred Hutch Cancer Reasearch Center - SCHARP - VISC. 
-We also recieved partnership from R/Phama in the form of RStudio Cloud support.
+This workshop was developed by employees of Fred Hutch Cancer Research Center - SCHARP - VISC. 
+We also recieved support from R/Pharma in the form of RStudio Cloud access to facilitate training.
