@@ -39,7 +39,7 @@ information provided. An answer key is also provided in the folder.
 | 70 - 80 | *Break* | |
 | 80 - 120  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
 | LUNCH | *Digital Track: Lunch & Learn*           |                                                    |                                 |
-| 120 - 180 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
+| 120 - 180 | **Introduction to {valtools}**       | [Intro to {valtools}](Slides/Slides-04-Introduction_to_Valtools/Slides-04-01-Valtools)                                |                                 |
 |           |                                      | Structure of Test Cases and Code                   | 04-E01: [Writing test code](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code)               |
 |           |                                      | Elements of a Validation Report                    | 04-E02: [Creating a validation report](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E02-Validation_Report)    |
 | 180 - 190 | *Break*                              |                                                    |                                 |
