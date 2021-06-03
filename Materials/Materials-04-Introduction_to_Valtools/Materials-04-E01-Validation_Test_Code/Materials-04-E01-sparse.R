@@ -1,3 +1,8 @@
+########### setup
+library(valtools)
+setwd(here::here("Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code/simple_validation"))
+
+
 ########### Task 04_E01 A
 # render the validation report found in folder "simple_validation"
 
