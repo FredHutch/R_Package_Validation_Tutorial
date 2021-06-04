@@ -1,19 +1,13 @@
 ########### setup
 library(valtools)
-setwd(here::here("Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code/simple_validation"))
+setwd(here::here("Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Elements/simple_validation"))
 
 
 ########### Task 04_E01 A
 # render the validation report found in folder "simple_validation"
-?vt_validate_report
 
 ########### Task 04_E01 B
 # Add missing case 001 to check valtools version is >= 0.3.0
-
-?vt_use_req
-?vt_use_test_case
-?vt_add_user_to_config
-?vt_use_test_code
 
 # Requirement details -- 
 # Activity: update the requirement and assessment with `1.1:1, High Risk, High Impact`. 
@@ -51,13 +45,9 @@ setwd(here::here("Materials/Materials-04-Introduction_to_Valtools/Materials-04-E
 # Discussion: Where is the child file ordering info stored? 
 # Discussion: Is the validation_files field required? Hint `?vt_get_child_files()`
 
-?vt_drop_file_from_config
-?vt_add_file_to_config
-file.show(vt_find_config())
-
 ########### Task 04_E01 E
 # switch to using dynamic rendering for requirement 001
 # Discussion: look at validation.Rmd - how do we initiate dynamic referencing?
 # Bonus1: add dynamic referencing elsewhere in validation report
 # Bonus2: switch from ## flags to a different flag. Do some work better than others?
-?vt_dynamic_referencer
+
