@@ -14,12 +14,10 @@ setwd(here::here("RPackageValidationTutorial.04E03"))
 # Activity
 
 # 1. install a validated package from source package
-vt_validate_install()
+?vt_validate_install
 
 # 2. examine the validation report from the installed package  
-library(RPackageValidationTutorial.04E03)
-file.show(list.files(system.file("validation",package = "RPackageValidationTutorial.04E03"),
-           pattern = ".pdf", full.names = TRUE))
+# hint: system.file("validation", package = "RPackageValidationTutorial.04E03")
 
 # Discussion
 # - Where does the validation report live once a package is installed?
@@ -29,12 +27,10 @@ file.show(list.files(system.file("validation",package = "RPackageValidationTutor
 ########## Task 04_E03 C: re-validate a package that has been installed
 # Activity
 
-# 1. run validation report from installed packaage
-vt_validate_installed_package("RPackageValidationTutorial.04E03",
-                              output_directory = here::here("new_report_location"))
+# 1. run validation report from installed package and save to new folder 
+?vt_validate_installed_package
 
 # 2. Examine the new version of the validation report
-file.show(here::here("new_report_location", "validation.pdf"))
 
 
 # Discussion 
@@ -49,15 +45,13 @@ remove.packages("RPackageValidationTutorial.04E03")
 # Activity
 
 # 1. build a tarball for distribution
-vt_validate_build()
+?vt_validate_build
 
 # 2. Install from tarball
-install.packages(here::here("RPackageValidationTutorial.04E03_0.0.0.9000.tar.gz"), repos = NULL)
+?install.packages
+## hint - what should repos be set to for local installations
 
 # 3. Examine the validation report. 
-library(RPackageValidationTutorial.04E03)
-file.show(list.files(system.file("validation",package = "RPackageValidationTutorial.04E03"),
-                     pattern = ".pdf", full.names = TRUE))
 
 # Discussion 
 # 1. when was the validation report run?

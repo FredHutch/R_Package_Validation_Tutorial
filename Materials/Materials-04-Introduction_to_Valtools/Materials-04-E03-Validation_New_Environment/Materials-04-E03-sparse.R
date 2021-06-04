@@ -14,12 +14,9 @@ setwd(here::here("RPackageValidationTutorial.04E03"))
 # Activity
 
 # 1. install a validated package from source package
-vt_validate_install()
+# hint: what vt_validate* function is appropriate?
 
 # 2. examine the validation report from the installed package  
-library(RPackageValidationTutorial.04E03)
-file.show(list.files(system.file("validation",package = "RPackageValidationTutorial.04E03"),
-           pattern = ".pdf", full.names = TRUE))
 
 # Discussion
 # - Where does the validation report live once a package is installed?
@@ -29,12 +26,10 @@ file.show(list.files(system.file("validation",package = "RPackageValidationTutor
 ########## Task 04_E03 C: re-validate a package that has been installed
 # Activity
 
-# 1. run validation report from installed packaage
-vt_validate_installed_package("RPackageValidationTutorial.04E03",
-                              output_directory = here::here("new_report_location"))
+# 1. run validation report from installed package and save to new folder 
+# hint: what vt_validate* function is appropriate?
 
 # 2. Examine the new version of the validation report
-file.show(here::here("new_report_location", "validation.pdf"))
 
 
 # Discussion 
@@ -49,21 +44,16 @@ remove.packages("RPackageValidationTutorial.04E03")
 # Activity
 
 # 1. build a tarball for distribution
-vt_validate_build()
+# hint: what vt_validate* function is appropriate?
 
 # 2. Install from tarball
-install.packages(here::here("RPackageValidationTutorial.04E03_0.0.0.9000.tar.gz"), repos = NULL)
+# hint: what should `repos` be set to for local installations
 
 # 3. Examine the validation report. 
-library(RPackageValidationTutorial.04E03)
-file.show(list.files(system.file("validation",package = "RPackageValidationTutorial.04E03"),
-                     pattern = ".pdf", full.names = TRUE))
 
 # Discussion 
 # 1. when was the validation report run?
 # 2. when is it appropriate to use this model of validation? what are the risk considerations?
-
-
 
 # Overall Discussion: 
 #  - When do you see each mode being useful?
