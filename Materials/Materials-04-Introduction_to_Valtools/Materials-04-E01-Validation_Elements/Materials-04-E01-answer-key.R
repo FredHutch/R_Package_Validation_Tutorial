@@ -64,8 +64,8 @@ vt_validate_report()
 ########### Task 04_E01 E
 # switch to using dynamic rendering for requirement 001
 # Activity: in file Test_Case_001.md 
-#  - replace `1.1: 1.1` with `1.1: ##req:1.1`
-#  - replace `that the version` with `Requirement ##req:1 is fulfilled by checking that the version`
+#  - replace `1.1: 1.1` with `1.1: ##req:second_req.1`
+#  - replace `that the version` with `Requirement #req:second_req.1 is fulfilled by checking that the version`
 vt_validate_report()
 # Discussion: look at validation.Rmd - how do we initiate dynamic referencing?
 # Bonus1: add dynamic referencing elsewhere in validation report

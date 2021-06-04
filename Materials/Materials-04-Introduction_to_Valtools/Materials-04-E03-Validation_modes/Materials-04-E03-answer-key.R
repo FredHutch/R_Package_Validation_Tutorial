@@ -2,6 +2,9 @@
 library(valtools)
 setwd(here::here("RPackageValidationTutorial.04E03"))
 
+## double check that the package isn't present in current environment
+testthat::expect_error(library(RPackageValidationTutorial.04E03))
+
 ########### Task 04_E03 A
 # Discussion: What are the different models of validation?
 #    Already covered: 
@@ -29,7 +32,7 @@ file.show(list.files(system.file("validation",package = "RPackageValidationTutor
 ########## Task 04_E03 C: re-validate a package that has been installed
 # Activity
 
-# 1. run validation report from installed packaage
+# 1. run validation report from installed package
 vt_validate_installed_package("RPackageValidationTutorial.04E03",
                               output_directory = here::here("new_report_location"))
 
@@ -43,6 +46,8 @@ file.show(here::here("new_report_location", "validation.pdf"))
 
 # 3. uninstall package to clean up workspace for next scenario
 remove.packages("RPackageValidationTutorial.04E03")
+## double check that the package isn't present in current environment
+testthat::expect_error(library(RPackageValidationTutorial.04E03))
 
 ########### Task 04_E03 D: build a validated package to share
 
@@ -50,6 +55,9 @@ remove.packages("RPackageValidationTutorial.04E03")
 
 # 1. build a tarball for distribution
 vt_validate_build()
+## double check that the package isn't present in current environment
+testthat::expect_error(library(RPackageValidationTutorial.04E03))
+
 
 # 2. Install from tarball
 install.packages(here::here("RPackageValidationTutorial.04E03_0.0.0.9000.tar.gz"), repos = NULL)

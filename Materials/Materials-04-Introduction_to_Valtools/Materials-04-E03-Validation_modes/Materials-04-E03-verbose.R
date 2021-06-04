@@ -1,6 +1,8 @@
 # setup 
 library(valtools)
 setwd(here::here("RPackageValidationTutorial.04E03"))
+## double check that the package isn't present in current environment
+testthat::expect_error(library(RPackageValidationTutorial.04E03))
 
 ########### Task 04_E03 A
 # Discussion: What are the different models of validation?
@@ -39,6 +41,8 @@ setwd(here::here("RPackageValidationTutorial.04E03"))
 
 # 3. uninstall package to clean up workspace for next scenario
 remove.packages("RPackageValidationTutorial.04E03")
+## double check that the package isn't present in current environment
+
 
 ########### Task 04_E03 D: build a validated package to share
 
@@ -46,6 +50,8 @@ remove.packages("RPackageValidationTutorial.04E03")
 
 # 1. build a tarball for distribution
 ?vt_validate_build
+## double check that the package isn't present in current environment
+
 
 # 2. Install from tarball
 ?install.packages
