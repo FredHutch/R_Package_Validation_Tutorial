@@ -14,6 +14,7 @@ By the end of this tutorial, you will know how to apply the R Package
 Validation Framework to your internal R packages, and apply the
 {valtools} package.
 
+
 |                                     |
 |-------------------------------------|
 | :spiral\_calendar: [Cascadia R Conf](https://cascadiarconf.com/agenda/), Friday June 4th      |
@@ -83,3 +84,8 @@ practice how validation affects subsequent package releases.
     slides](https://thebioengineer.github.io/validation_studio_2021)
 -   [RStudio 2020
     presentation](https://rstudio.com/resources/rstudioconf-2020/approaches-to-assay-processing-package-validation/)
+    
+## Acknowledgments
+
+This workshop was developed by employees of Fred Hutch Cancer Research Center - SCHARP - VISC. 
+We also recieved support from R/Pharma in the form of RStudio Cloud access to facilitate training.
