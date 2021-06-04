@@ -1,7 +1,5 @@
 ########### Task 02_E02_A
 # Add a help page for the function `hello_world` using roxygen tags
-# include the custom sections "Last updated by" and "Last updated date"
-# with values on subsequent line.
 
 ########### Task 02_E02_B
 # Housekeeping: Make sure that this package passes devtools::check()
