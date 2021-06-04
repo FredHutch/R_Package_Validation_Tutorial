@@ -35,10 +35,10 @@ information provided. An answer key is also provided in the folder.
 |:----------|:-------------------------------------|----------------------------------------------------|:--------------------------------|
 | 0 - 10    | **Welcome and Orientation**          |                                                    |                                 |
 | 10 - 70   | **Package Elements & Structure**     | [Package Elements & Structure ](Slides/Slides-02-Package_Elements_and_Structure/Materials-02-01-Package_Elements_and_Structure)     | 02-E01: [Make a basic package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E01-Package_Basics)            |
-|           |                                      | Package Documentation                              | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
+|           |                                      | [Package Documentation](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-02-Package_Documentation)                         | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
 |           |                                      | [Deploying R Packages](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-03-Package_Deployment)                               | 02-E03: [Exploring Installation sources](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
 | 70 - 80 | *Break* | |
-| 80 - 120  | **Concepts of R Package Validation** | [Introduction to the R Package Validation Framework](Slides\Slides-03-Concepts_of_R_Package_Validation) |                                 |
+| 80 - 120  | **Concepts of R Package Validation** | [Introduction to the R Package Validation Framework](Slides/Slides-03-Concepts_of_R_Package_Validation) |                                 |
 | LUNCH | *Digital Track: Lunch & Learn*           |                                                    |                                 |
 | 120 - 180 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
 |           |                                      | Elements of Validation                  | 04-E01: [Writing test code](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code)               |
