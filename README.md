@@ -33,7 +33,7 @@ information provided. An answer key is also provided in the folder.
 
 | Time      | Section                              | Slides                                             | Exercises                       |
 |:----------|:-------------------------------------|----------------------------------------------------|:--------------------------------|
-| 0 - 10    | **Welcome and Orientation**          |                                                    |                                 |
+| 0 - 10    | **Welcome and Orientation**          | [Welcome Slides](Slides/Slides-01-Welcome_and_Orientation)      |                                 |
 | 10 - 70   | **Package Elements & Structure**     | [Package Elements & Structure ](Slides/Slides-02-Package_Elements_and_Structure/Materials-02-01-Package_Elements_and_Structure)     | 02-E01: [Make a basic package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E01-Package_Basics)            |
 |           |                                      | [Package Documentation](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-02-Package_Documentation)                         | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
 |           |                                      | [Deploying R Packages](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-03-Package_Deployment)                               | 02-E03: [Exploring Installation sources](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
