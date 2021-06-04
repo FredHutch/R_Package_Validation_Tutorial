@@ -8,10 +8,6 @@
 #' @title Hello World
 #' @param name Name as characters
 #' @return the phrase "Hello NAME!"
-#' @section Last updated by:
-#' Someone
-#' @section Last updated date:
-#' 1900-01-01
 #' @export
 
 ########### Task 02_E02_B

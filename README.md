@@ -14,6 +14,7 @@ By the end of this tutorial, you will know how to apply the R Package
 Validation Framework to your internal R packages, and apply the
 {valtools} package.
 
+
 |                                     |
 |-------------------------------------|
 | :spiral\_calendar: [Cascadia R Conf](https://cascadiarconf.com/agenda/), Friday June 4th      |
@@ -34,16 +35,16 @@ information provided. An answer key is also provided in the folder.
 |:----------|:-------------------------------------|----------------------------------------------------|:--------------------------------|
 | 0 - 10    | **Welcome and Orientation**          |                                                    |                                 |
 | 10 - 70   | **Package Elements & Structure**     | [Package Elements & Structure ](Slides/Slides-02-Package_Elements_and_Structure/Materials-02-01-Package_Elements_and_Structure)     | 02-E01: [Make a basic package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E01-Package_Basics)            |
-|           |                                      | Package Documentation                              | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
-|           |                                      | Deploying R Packages                               | 02-E03: [Exploring Installation sources](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
+|           |                                      | [Package Documentation](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-02-Package_Documentation)                         | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
+|           |                                      | [Deploying R Packages](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-03-Package_Deployment)                               | 02-E03: [Exploring Installation sources](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
 | 70 - 80 | *Break* | |
-| 80 - 120  | **Concepts of R Package Validation** | Introduction to the R Package Validation Framework |                                 |
+| 80 - 120  | **Concepts of R Package Validation** | [Introduction to the R Package Validation Framework](Slides/Slides-03-Concepts_of_R_Package_Validation) |                                 |
 | LUNCH | *Digital Track: Lunch & Learn*           |                                                    |                                 |
-| 120 - 180 | **Introduction to {valtools}**       | Intro to {valtools}                                |                                 |
-|           |                                      | Structure of Test Cases and Code                   | 04-E01: [Writing test code](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code)               |
-|           |                                      | Elements of a Validation Report                    | 04-E02: [Creating a validation report](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E02-Validation_Report)    |
+| 120 - 180 | **Introduction to {valtools}**       | [Intro to {valtools}](Slides/Slides-04-Introduction_to_Valtools/Slides-04-01-Valtools)                                |                                 |
+|           |                                      | Elements of Validation                  | 04-E01: [Writing test code](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Test_Code)               |
+|           |                                      | The Validation Report                    | 04-E02: [Creating a validation report](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E02-Validation_Report)    |
 | 180 - 190 | *Break*                              |                                                    |                                 |
-| 190 - 210 |                                      | Re-Validating a Package                            | 04-E03: [Validation in a new environment](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E03-Validation_New_Environment) |
+| 190 - 210 |                                      | Modes of Validation                          | 04-E03: [Validation in a new environment](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E03-Validation_New_Environment) |
 | 210 - 240 | **Closeout**                         |                                                    |                                 |
 
 ## Setup
@@ -83,3 +84,8 @@ practice how validation affects subsequent package releases.
     slides](https://thebioengineer.github.io/validation_studio_2021)
 -   [RStudio 2020
     presentation](https://rstudio.com/resources/rstudioconf-2020/approaches-to-assay-processing-package-validation/)
+    
+## Acknowledgments
+
+This workshop was developed by employees of Fred Hutch Cancer Research Center - SCHARP - VISC. 
+We also recieved support from R/Pharma in the form of RStudio Cloud access to facilitate training.
