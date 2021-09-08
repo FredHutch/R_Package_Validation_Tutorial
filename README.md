@@ -4,8 +4,8 @@
 
 Welcome to the R Package Validation Tutorial!
 
-Based on the R Package Validation Framework White Paper that is in
-preparation under PHUSE (citation), this tutorial aims to teach the
+Based on the [R Package Validation Framework White Paper that is in
+pubic review under PHUSE](https://lnkd.in/dufTZ2Ra), this tutorial aims to teach the
 basics of R package development while creating all the necessary
 documentation to support a validation. The training will show how to use
 the {valtools} package as part of the development process.
@@ -17,15 +17,11 @@ Validation Framework to your internal R packages, and apply the
 
 |                                     |
 |-------------------------------------|
-| :spiral\_calendar: [Cascadia R Conf](https://cascadiarconf.com/agenda/), Friday June 4th      |
-| :alarm\_clock: 10A-12P (part 1) & 1:30P-3:30P (part 2)                 |
+| :spiral\_calendar: PHUSE CSS Conf, Monday September 13th      |
 | :man_technologist: [@thebioengineer](https://github.com/thebioengineer)      |
 | :woman_technologist: [@mariev](https://github.com/mariev)              |
-| :speech\_balloon: [slack](https://app.slack.com/client/T5FG0LBND/C0224NFG5TR) |
 
 ## Schedule & Materials
-
-The tutorial is planned to take about 4 hours, including breaks.
 
 Slides and exercises are grouped by section. Exercises are split into
 `Spartan` or `Verbose`, indicating the amount of supplementary
@@ -34,18 +30,12 @@ information provided. An answer key is also provided in the folder.
 | Time      | Section                              | Slides                                             | Exercises                       |
 |:----------|:-------------------------------------|----------------------------------------------------|:--------------------------------|
 | 0 - 10    | **Welcome and Orientation**          | [Welcome Slides](Slides/Slides-01-Welcome_and_Orientation)      |                                 |
-| 10 - 70   | **Package Elements & Structure**     | [Package Elements & Structure ](Slides/Slides-02-Package_Elements_and_Structure/Materials-02-01-Package_Elements_and_Structure)     | 02-E01: [Make a basic package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E01-Package_Basics)            |
-|           |                                      | [Package Documentation](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-02-Package_Documentation)                         | 02-E02: [Documenting a package](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E02-Package_Documentation)           |
-|           |                                      | [Deploying R Packages](Slides/Slides-02-Package_Elements_and_Structure/Slides-02-03-Package_Deployment)                               | 02-E03: [Exploring Installation sources](Materials/Materials-02-Package_Elements_and_Structure/Materials-02-E03-Package_Installation)  |
-| 70 - 80 | *Break* | |
-| 80 - 120  | **Concepts of R Package Validation** | [Introduction to the R Package Validation Framework](Slides/Slides-03-Concepts_of_R_Package_Validation) |                                 |
-| LUNCH | *Digital Track: Lunch & Learn*           |                                                    |                                 |
-| 120 - 180 | **Introduction to {valtools}**       | [Intro to {valtools}](Slides/Slides-04-Introduction_to_Valtools/Slides-04-Intro-Valtools)                                |                                 |
-|           |                                      | [Elements of Validation](Slides/Slides-04-Introduction_to_Valtools/Slides-04-01-Elements_of_Validation)                  | 04-E01: [Writing test code](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E01-Validation_Elements) |
-|           |                                      | [The Validation Report](Slides/Slides-04-Introduction_to_Valtools/Slides-04-02-The_Validation_Report)                    | 04-E02: [Creating a validation report](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E02-Validation_Report)    |
-| 180 - 190 | *Break*                              |                                                    |                                 |
-| 190 - 210 |                                      | [Modes of Validation](Slides/Slides-04-Introduction_to_Valtools/Slides-04-03-Modes_of_Validation)                          | 04-E03: [Validation in a new environment](Materials/Materials-04-Introduction_to_Valtools/Materials-04-E03-Validation_modes) |
-| 210 - 240 | **Closeout**                         |                                                    |                                 |
+| 10 - 30   | **Concepts of R Package Validation** | [Introduction to the R Package Validation Framework](Slides/Slides-02-Concepts_of_R_Package_Validation) |                                 |
+| 40 - 50   | **Introduction to {valtools}**       | [Intro to {valtools}](Slides/Slides-03-Intro_to_Valtools)                                |                                 |
+| 50 - 90   | **Using {valtools}**                 | [Elements of Validation](Slides/Slides-04-Elements_of_Validation)                  | 04: [Writing test code](Materials/Materials-04-Validation_Elements) |
+| 90 - 125  | **Validation Reports**               | [The Validation Report](Slides/Slides-05-The_Validation_Report)                    | 05: [Creating a validation report](Materials/Materials-05-Validation_Report)    |
+| 125 - 135 | *Break/Q&A*                          |                                                    |                                 |
+| 140 - 180 | **Types of Validation & Q&A**        | [Modes of Validation](Slides/Slides-06-Modes_of_Validation)                          | 06: [Validation in a new environment](Materials/Materials-06-Validation_modes) |
 
 ## Setup
 
