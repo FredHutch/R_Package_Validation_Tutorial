@@ -1,27 +1,31 @@
-# setup 
+# setup ----
+
+# We have been a completed package. 
+# Lets work with the validation modes
+
 library(valtools)
-setwd(here::here("RPackageValidationTutorial.04E03"))
+setwd(here::here("Materials/Materials-06-Validation_Report/sample.validated.package"))
 
 ## double check that the package isn't present in current environment
-testthat::expect_error(library(RPackageValidationTutorial.04E03))
+testthat::expect_error(library(sample.validated.package))
 
-########### Task 04_E03 A
+# Task 06 A ----
 # Discussion: What are the different models of validation?
 #    Already covered: 
 #      - E01: validate outside of installed package aka "third-party validation"
 #      - E02: validate from code aka "validate while developing"
 
 
-########### Task 04_E03 B: validate on install
+# Task 06 B ----
 
-# Activity
+# Validate on install
 
-# 1. install a validated package from source package
+# install a validated package from source package
 vt_validate_install()
 
-# 2. examine the validation report from the installed package  
-library(RPackageValidationTutorial.04E03)
-file.show(list.files(system.file("validation",package = "RPackageValidationTutorial.04E03"),
+# Examine the validation report from the installed package  
+library(sample.validated.package)
+file.show(list.files(system.file("validation",package = "sample.validated.package"),
            pattern = ".pdf", full.names = TRUE))
 
 # Discussion
@@ -29,42 +33,42 @@ file.show(list.files(system.file("validation",package = "RPackageValidationTutor
 # - During the installation, when is validation testing run?
 # - What
 
-########## Task 04_E03 C: re-validate a package that has been installed
-# Activity
+# Task 06 C ----
 
-# 1. run validation report from installed package
-vt_validate_installed_package("RPackageValidationTutorial.04E03",
+# re-validate a package that has been installed
+
+# run validation report from installed package
+vt_validate_installed_package("sample.validated.package",
                               output_directory = here::here("new_report_location"))
 
-# 2. Examine the new version of the validation report
+# Examine the new version of the validation report
 file.show(here::here("new_report_location", "validation.pdf"))
-
 
 # Discussion 
 #    - Why is it helpful to have both validation reports generated?
 #    - What differences do we expect to see between validation reports?
 
-# 3. uninstall package to clean up workspace for next scenario
-remove.packages("RPackageValidationTutorial.04E03")
+# uninstall package to clean up workspace for next scenario
+remove.packages("sample.validated.package")
 ## double check that the package isn't present in current environment
-testthat::expect_error(library(RPackageValidationTutorial.04E03))
+testthat::expect_error(library(sample.validated.package))
 
-########### Task 04_E03 D: build a validated package to share
+# Task 06 D ----
 
-# Activity
+# build a validated package to share as a tarball
 
-# 1. build a tarball for distribution
 vt_validate_build()
+
 ## double check that the package isn't present in current environment
-testthat::expect_error(library(RPackageValidationTutorial.04E03))
+testthat::expect_error(library(sample.validated.package))
 
 
-# 2. Install from tarball
-install.packages(here::here("RPackageValidationTutorial.04E03_0.0.0.9000.tar.gz"), repos = NULL)
+# Install from tarball
+install.packages(here::here("sample.validated.package_0.0.0.9000.tar.gz"), repos = NULL)
 
-# 3. Examine the validation report. 
-library(RPackageValidationTutorial.04E03)
-file.show(list.files(system.file("validation",package = "RPackageValidationTutorial.04E03"),
+# Examine the validation report. 
+library(sample.validated.package)
+file.show(list.files(system.file("validation",package = "sample.validated.package"),
                      pattern = ".pdf", full.names = TRUE))
 
 # Discussion 
