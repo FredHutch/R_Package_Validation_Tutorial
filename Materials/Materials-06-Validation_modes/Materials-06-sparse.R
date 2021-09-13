@@ -44,9 +44,9 @@ testthat::expect_error(library(sample.validated.package))
 #    - What differences do we expect to see between validation reports?
 
 # Uninstall package to clean up workspace for next scenario
-remove.packages("RPackageValidationTutorial.04E03")
+remove.packages("sample.validated.package")
 ## double check that the package isn't present in current environment
-testthat::expect_error(library(RPackageValidationTutorial.04E03))
+testthat::expect_error(library(sample.validated.package))
 
 
 
