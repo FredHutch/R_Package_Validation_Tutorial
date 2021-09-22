@@ -89,3 +89,9 @@ practice how validation affects subsequent package releases.
 
 This workshop was developed by employees of Fred Hutch Cancer Research Center - SCHARP - VISC. 
 We also recieved support from R/Pharma in the form of RStudio Cloud access to facilitate training.
+
+## Releases
+
+| Conference                            | Tag                                                                                                            | 
+|:-------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|
+| Cascadia R Conf 2021 - July 4th, 2021 | [CascadiaRConf2021](https://github.com/FredHutch/R_Package_Validation_Tutorial/releases/tag/CascadiaRConf2021) |
