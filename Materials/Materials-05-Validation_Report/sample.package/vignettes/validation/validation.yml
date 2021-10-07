@@ -1,4 +1,4 @@
-package: RPackageValidationTutorial.04E02
+package: sample.package
 working_dir: vignettes
 output_dir: inst
 report_rmd_name: Requirement_Adoption.Rmd

@@ -4,7 +4,7 @@
 # Lets work with the validation modes
 
 library(valtools)
-setwd(here::here("Materials/Materials-06-Validation_Report/sample.validated.package"))
+setwd(here::here("Materials/Materials-06-Validation_Report/sample.validated.package/"))
 
 ## double check that the package isn't present in current environment
 testthat::expect_error(library(sample.validated.package))
@@ -64,7 +64,9 @@ testthat::expect_error(library(sample.validated.package))
 
 
 # Install from tarball
-install.packages(here::here("sample.validated.package_0.0.0.9000.tar.gz"), repos = NULL)
+install.packages(
+  here::here("../sample.validated.package_0.0.0.9000.tar.gz"),
+  repos = NULL)
 
 # Examine the validation report. 
 library(sample.validated.package)

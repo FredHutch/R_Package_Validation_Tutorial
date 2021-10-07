@@ -16,7 +16,18 @@ usernames:
     name: A Different Author
     title: Programmer
     role: tester
+  Ellis:
+    name: Ellis Hughes
+    title: Data Science LeAD
+    role: Validation Lead
+  user_b:
+    name: Val A Dashun
+    title: Programmer II
+    role: tester
 validation_files:
+- Requirement_002.md
+- Test_Case_002.md
+- Test_Code_002.R
 - Requirement_001.md
-- Test_Case_001md
+- Test_Case_001.md
 - Test_Code_001.R

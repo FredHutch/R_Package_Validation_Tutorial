@@ -10,7 +10,7 @@ setwd(here::here("Materials/Materials-04-Validation_Elements/simple_validation")
 
 # Add another requirement that valtools version is >= 0.3.0
 # Add another Test Case to test that valtools version is >= 0.3.0
-# Add another Test Case to prove that valtools version is >= 0.3.0
+# Add another Test Code to prove that valtools version is >= 0.3.0
 
 vt_use_req("Requirement_002.md")
 # Activity: respond to prompt for username.
@@ -53,9 +53,9 @@ vt_use_test_code("Test_Code_002", username = "Val A Dashun")
 vt_validate_report()
 
 ########### Task 04 C
-# Move Test case 002 files aheads of case 001 in the validation section 
+# Move Test case 002 files ahead of case 001 in the validation section 
 vt_drop_file_from_config(c("Requirement_002.md", "Test_Case_002.md", "Test_Code_002.R"))
-vt_add_file_to_config(c("Requirement_002.md", "Test_Case_002.md", "Test_Code_002.R"), after = tidyr::contains("001"))
+vt_add_file_to_config(c("Requirement_002.md", "Test_Case_002.md", "Test_Code_002.R"), before = tidyr::contains("001"))
 vt_validate_report()
 # Discussion: Where is the child file ordering info stored? Hint `file.show(vt_find_config())`
 # Discussion: Is the validation_files field required? Hint `?vt_get_child_files()`

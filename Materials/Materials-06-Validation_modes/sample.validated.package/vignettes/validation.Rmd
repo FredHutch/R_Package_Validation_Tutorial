@@ -25,7 +25,7 @@ suppressPackageStartupMessages({
   library(kableExtra)
   library(magrittr)
   library(devtools)
-  library(RPackageValidationTutorial.04E03)
+  library(sample.validated.package)
 })
 
 opts_chunk$set(
