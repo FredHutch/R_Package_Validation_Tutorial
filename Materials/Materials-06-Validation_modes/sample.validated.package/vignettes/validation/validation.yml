@@ -1,0 +1,18 @@
+package: RPackageValidationTutorial.04E03
+working_dir: vignettes
+output_dir: inst
+report_rmd_name: validation.Rmd
+report_naming_format: Validation_Report_{package}_v{version}_{date}
+usernames:
+  mvendett:
+    name: A person
+    title: Programmer
+    role: Validation Lead
+  user_b:
+    name: Val A Dashun
+    title: Programmer II
+    role: tester
+validation_files:
+- Requirement_001.md
+- Test_case_001.md
+- Test_code_001.R
