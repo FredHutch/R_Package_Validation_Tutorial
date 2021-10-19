@@ -1,61 +1,58 @@
-########### setup
-
-# We have been a partially completed validation packet. Lets complete it. 
-
 library(valtools)
-setwd(here::here("Materials/Materials-04-Validation_Elements/simple_validation"))
+
+########### instantiate a validation framework for R base
+
+###### Action
+# instantiate
+# supress opening new rstudio session
+vt_create_packet("r_pharma_validation", open = FALSE)
+
+##### Discussion questions
+# 1. what files/folders were created? what looks familiar? why?
+# 2. when would it be helpful to use open = TRUE?
+# 3. where can the folder "r_pharma_validation" live? why or why not?
+
+########### create requirement files in  md
+
+###### Action
+setwd("r_pharma_validation")
+vt_use_req("req1.md",
+           username = "useR",
+           title = "programmer",
+           open = TRUE)
+
+# Paste the following text in line 7 of req1.md
+# + Character variables from csv import are loaded as factors.
+
+##### Discussion questions
+# 1. Where does vt_use_req create the requirement file? 
+#    hint: why did we need to call setwd() first?
+# 2. What are the components of the roxygen header? are these 
+#    standard roxygen2 tags? are any unique to valtools?
+
+########### update roxygen header
+
+###### Action
+# delete lines 4-5 from req1.md
+# update the editor (line 2) to "A user"
+
+########### advanced: add a requirements file in rmd
+
+###### Action
+vt_use_req("req2.Rmd",
+           username = "useR",
+           title = "programmer",
+           open = TRUE)
+
+########### create a requirement report from scratch
+
+###### Action
+# 1. Create a blank Rmd file in folder "r_pharma_validation" named 
+# "Requirement_report.Rmd"
+# 2. add the following chunk
+
+```{r, requirements}
+
+```
 
 
-########### Task 04 A
-
-# Add another requirement that valtools version is >= 0.3.0
-# Add another Test Case to test that valtools version is >= 0.3.0
-# Add another Test Code to prove that valtools version is >= 0.3.0
-
-vt_use_req("Requirement_002.md")
-# Activity: respond to prompt for username.
-#        Y to add user to config
-#        "name" and "title" are free response
-#        "role" should be "Validation Lead"
-# Discussion: How do responses to the prompt affect the requirement file?
-# Activity: Replace  `REQUIREMENT: ASSESSMENT` with `1.1:1, High Risk, High Impact`. 
-# Activity: copy the following content - 
-#   ## 002. `valtools` version installed {-}
-# 
-#   
-#     + `2.1 {valtools}` is the version approved for usage.
-
-vt_use_test_case("Test_Case_002.md")
-# Discussion: Who is the editor? Has this changed from previous update?
-# Activity: replace `TESTCASE: REQUIREMENT` with `2.1: 2.1`. 
-# Discussion: How would this change with additional test cases or requirements?
-# Activity: copy the following content - 
-#   *Test Cases*
-#   
-#     + 2.1 Test that the version of `{valtools}` is `>= 0.3.0`
-
-vt_add_user_to_config(
-  username = "user_b",
-  name = "Val A Dashun",
-  title = "Programmer II",
-  role = "tester"
-)
-
-vt_use_test_code("Test_Code_002", username = "Val A Dashun")
-# Discussion: Why did we add a different person to the @editor field for test code?
-# Activity: Update `TESTNUMBER` to `2.1` and copy the following into the body of the test - 
-#   expect_true(
-#     packageVersion("valtools") >= "0.3.0"
-#   )
-
-########### Task 04 B
-# render the validation report
-vt_validate_report()
-
-########### Task 04 C
-# Move Test case 002 files ahead of case 001 in the validation section 
-vt_drop_file_from_config(c("Requirement_002.md", "Test_Case_002.md", "Test_Code_002.R"))
-vt_add_file_to_config(c("Requirement_002.md", "Test_Case_002.md", "Test_Code_002.R"), before = tidyr::contains("001"))
-vt_validate_report()
-# Discussion: Where is the child file ordering info stored? Hint `file.show(vt_find_config())`
-# Discussion: Is the validation_files field required? Hint `?vt_get_child_files()`
