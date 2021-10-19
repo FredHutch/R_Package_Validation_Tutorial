@@ -1,5 +1,5 @@
 ---
-title: "Requirement_report"
+title: "Requirement Report"
 author: "Validation Author"
 date: "10/18/2021"
 output: pdf_document
@@ -13,5 +13,6 @@ opts_chunk$set(echo = FALSE,
 ```
 
 ```{r requirements}
-vt_file("requirements/req1.md")
+req_path <- file.path("validation", "requirements")
+vt_file(file.path(req_path, c("req1.md", "req2.Rmd")))
 ```

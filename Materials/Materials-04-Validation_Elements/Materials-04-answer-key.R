@@ -1,6 +1,6 @@
 library(valtools)
 
-########### instantiate a validation framework for R base
+########### Exercise: instantiate a validation framework for R base
 
 ###### Action
 # instantiate
@@ -12,7 +12,7 @@ vt_create_packet("r_pharma_validation", open = FALSE)
 # 2. when would it be helpful to use open = TRUE?
 # 3. where can the folder "r_pharma_validation" live? why or why not?
 
-########### create requirement files in  md
+########### Exercise: create simple requirement file
 
 ###### Action
 setwd("r_pharma_validation")
@@ -22,7 +22,7 @@ vt_use_req("req1.md",
            open = TRUE)
 
 # Paste the following text in line 7 of req1.md
-# + Character variables from csv import are loaded as factors.
+# 1. Character variables from csv import are not coerced to factors.
 
 ##### Discussion questions
 # 1. Where does vt_use_req create the requirement file? 
@@ -30,29 +30,104 @@ vt_use_req("req1.md",
 # 2. What are the components of the roxygen header? are these 
 #    standard roxygen2 tags? are any unique to valtools?
 
-########### update roxygen header
+########### Exercise: update roxygen header
 
 ###### Action
 # delete lines 4-5 from req1.md
 # update the editor (line 2) to "A user"
 
-########### advanced: add a requirements file in rmd
+##### Discussion questions
+# 1. When does it make sense to use the risk assessment tag? 
+# 2. If risk assesment tag is present, how does {valtools} treat this info? 
+#    hint:look at cheatsheet p1
 
-###### Action
-vt_use_req("req2.Rmd",
-           username = "useR",
-           title = "programmer",
-           open = TRUE)
-
-########### create a requirement report from scratch
+########### Exercise: create a requirement report from scratch
 
 ###### Action
 # 1. Create a blank Rmd file in folder "r_pharma_validation" named 
 # "Requirement_report.Rmd"
-# 2. add the following chunk
+# 2. Add yml header
+#
+# ---
+# title: "Requirement Report"
+# author: "Validation Author"
+# date: "10/18/2021"
+# output: pdf_document
+# ---
 
-```{r, requirements}
+# 3. add the following chunk (setup)
+#
+# ```{r setup, echo=FALSE, warning=FALSE}
+# library(valtools)
+# library(knitr)
+# opts_chunk$set(echo = FALSE, 
+#                results="asis")
+# ```
+# 4. add the following chunk (vt_file)
+#
+# ```{r requirements}
+# req_path <- file.path("validation", "requirements")
+# vt_file(file.path(req_path, "req1.md"))
+# ```
+# 5. set up the validation config file. In /validation/validation.yml, 
+# update lines 4-5 to:
+#
+# report_rmd_name: Requirement_report.Rmd
+# report_naming_format: Requirement_Report_{date}
+#
+# 6. Render the requirement report
+#
+# vt_validate_report()
 
-```
+###### Discussion
+
+# 1. Where does the requirement report get saved to?
+# 2. How is this file different from using rmarkdown to render from Rmd?
+# 3. In what other types of reports would it make sense to include the 
+#    child file ("req1.md") ?
+# 4. Locate the documentation function on page 1 of the {valtools} cheatsheet.
+#    What other validation workflows exist? how would we expect to see the report
+#    generation differ?
+
+########### advanced/optional exercise: create a requirements file named req2.Rmd from 
+#           scratch and update the requirement report
+
+###### Action
+
+# 1. example roxygen block in req2.Rmd:
+#   #' @title programmer
+#   #' @editor useR
+#   #' @editDate 2021-10-19
+
+# 2. example content in req2.Rmd:
+#
+#  1. `mtcars` dataset includes the following records:
+# 
+#  ```{r, echo=FALSE, warning=FALSE}
+#  library(knitr)
+#  kable(mtcars[1:3,], format = "latex")
+#  ````
+
+# 3. Modify "requirements" chunk in Requirement_report:
+#
+# ```{r requirements}
+# req_path <- file.path("validation", "requirements")
+# vt_file(file.path(req_path, c("req1.md", "req2.Rmd")))
+# ```
+
+# 4. Render the requirement report to pdf
+
+# vt_validate_report()
+
+###### Discussion
+
+# 1. Is it possible to use `vt_use_req` to create a Rmd requirement? 
+# 2. What is the benefit to using Rmd for requirement documentation?
+# 3. What does the error "incomplete final line found" mean?
+
+
+
+
+
 
 
