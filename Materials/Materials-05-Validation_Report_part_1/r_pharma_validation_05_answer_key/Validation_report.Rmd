@@ -1,0 +1,37 @@
+---
+title: "Validation Report"
+author: "Validation Author"
+date: "10/18/2021"
+output: pdf_document
+---
+
+```{r setup, echo=FALSE, warning=FALSE}
+library(valtools)
+library(knitr)
+opts_chunk$set(echo = FALSE, 
+               results="asis")
+```
+
+# Case A
+
+## Requirement
+
+```{r requirements}
+req_path <- file.path("validation", "requirements")
+vt_file(file.path(req_path, "req1.md"))
+```
+
+## Test case 
+
+```{r test-case}
+test_case_path <- file.path("validation", "test_cases")
+vt_file(file.path(test_case_path, "test_case1.md"))
+```
+
+## Test result
+
+```{r test-code}
+test_code_path <- file.path("validation", "test_code")
+vt_file(file.path(test_code_path, "test_code1.R"))
+```
+
