@@ -118,7 +118,7 @@ testthat::expect_type(this_pp$species, "character")
 
 #### Discussion questions
 # 1. How does this differ from creating the requirement report via 
-#    `vt_validate_report()`?
+#    the knit button?
 
 ########### Advanced/optional exercise: Update the validation report with a second requirement/test case/test code
 
