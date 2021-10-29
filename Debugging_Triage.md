@@ -8,7 +8,7 @@ First, see if any of the other members of the breakout session are coming across
 
 Optionally, see if you can reproduce the issue. 
 Try re-starting the assignment and following the instructions. 
-If you still come across errors, reach out to the TA's.
+If you still come across errors, reach out to the TAs.
 
 Alternatively, review the answer key and be focus on the discussion questions in the breakout group!
 Be prepared to come back to the larger group discussion with answers.
