@@ -1,5 +1,5 @@
 library(valtools)
-setwd(file.path("Materials-05-Validation_Report_part_1",
+setwd(file.path("Materials-05-Validation_Report",
                 "r_pharma_validation"))
 # Note: This set of exercises pick up where Materials 04 leave off.
 #       This answer key rely on a "fresh" version 
@@ -16,14 +16,17 @@ vt_use_test_case("test_case1",
                  title = "programmer",
                  open = TRUE)
 
-# 2. Replace lines 8 & 10 with the following content
+# 2. create the data verification file using the following code
 
-# + Setup: Save the first 10 rows of `palmerpenguins::penguins` to the new folder `validation/testdata` as file "rpharma_pp.csv". 
-# 
+this_pp <- palmerpenguins::penguins[1:10,]
+dir.create("validation/testdata")
+write.csv(this_pp, file = "validation/testdata/rpharma_pp.csv")
+
+# 3. Replace lines 8 - 10 with the following content
+
 # + Read in the file `validation/testdata/rpharma_pp.csv` and save as `this_pp`. Verify that the variable "species" in `this_pp` is of class `character`.
 
-
-# 3. delete lines 4-5
+# 4. delete lines 4-5
 
 #### Discussion questions
 # 1. What file extension was automatically assigned to test_case1?
@@ -41,11 +44,7 @@ vt_use_test_code(name = "test_code1",
                  username = "useR_2",
                  open = TRUE)
 
-# 2. Add the following setup code immediately following line 2 in test_code1.R
 
-this_pp <- palmerpenguins::penguins[1:10,]
-dir.create("validation/testdata")
-write.csv(this_pp, file = "validation/testdata/rpharma_pp.csv")
 
 # 3. Replace the value [TESTNUMBER] with "TC_A1"
 

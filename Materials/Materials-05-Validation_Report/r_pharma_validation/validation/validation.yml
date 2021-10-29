@@ -5,6 +5,3 @@ report_rmd_name: Requirement_report.Rmd
 report_naming_format: Requirement_Report_{date}
 usernames: []
 validation_files:
-- req1.md
-- test_case1.md
-- test_code1.R
