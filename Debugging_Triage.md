@@ -1,6 +1,6 @@
 ## Debugging
 
-When working through these slides and exercises, don't become discouraged if something doesnt work out or isnt clear. Follow these instructions
+When working through these slides and exercises, don't become discouraged if something does not work immediately or seems obtuse. Follow these instructions:
 
 ### Attendee
 
