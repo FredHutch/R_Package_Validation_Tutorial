@@ -17,7 +17,7 @@ vt_validate_report()
 # 2. What location was the report output to? 
 # 3. How does this differ from creating the requirement report via 
 #    the knit button?
-# 4. BONUS: Why could this be important if the "validation" folder was saved withing
+# 4. BONUS: Why could this be important if the "validation" folder was saved within
 #    an R package, e.g. within the "vignettes" folder?
 
 
