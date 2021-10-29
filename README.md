@@ -13,7 +13,7 @@ packet as well as how to apply this to R package development.
 
 |                                     |
 |-------------------------------------|
-| :spiral\_calendar: R/PharmaS Conf, Monday November 5th      |
+| :spiral\_calendar: R/Pharma Conf, Monday November 5th      |
 | :man_technologist: [@thebioengineer](https://github.com/thebioengineer)      |
 | :woman_technologist: [@mariev](https://github.com/mariev)              |
 
