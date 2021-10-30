@@ -84,3 +84,4 @@ We also received support from R/Pharma in the form of RStudio Cloud access to fa
 |:-------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|
 | Cascadia R Conf 2021 - July 4th, 2021 | [CascadiaRConf2021](https://github.com/FredHutch/R_Package_Validation_Tutorial/releases/tag/CascadiaRConf2021) |
 | PHUSE CSS 2021 - September 13th, 2021 | [PhUSECSS2021](https://github.com/FredHutch/R_Package_Validation_Tutorial/releases/tag/PhUSECSS2021) |
+
