@@ -69,7 +69,7 @@ practice how validation affects subsequent package releases.
 ## References
 
 -   [RStudio 2021
-    slides](https://thebioengineer.github.io/validation_studio_2021)
+    slides](https://thebioengineer.github.io/validation_rstudio_2021)
 -   [RStudio 2020
     presentation](https://rstudio.com/resources/rstudioconf-2020/approaches-to-assay-processing-package-validation/)
     
