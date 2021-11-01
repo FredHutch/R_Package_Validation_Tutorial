@@ -31,7 +31,7 @@ information provided. An answer key is also provided in the folder.
 | 35 - 75   | **Elements of Validation Part 1**                 | [Elements of Validation Part 1](Slides/Slides-04-Elements_of_Validation)                  | 04: [Writing Requirements](Materials/Materials-04-Requirements_Report) |
 | 75 - 85 | *Break/Q&A*                          |                                                    |                                 |
 | 85 - 125| **Elements of Validation Part 2**            | [Elements of Validation Part 2](Slides/Slides-05-The_Validation_Report)                    | 05: [Validation Reports](Materials/Materials-05-Validation_Report)    |
-| 125 - 155 | **Managing Validation Projects**        | [Managing Validation Projects](Slides/Slides-06-Managing_Validation_Projects)                          | 06: [Managing Validation Projects](Materials/Materials-06-Managing_Validation_Projects) |
+| 125 - 155 | **Managing Validation Projects**        | [Managing Validation Projects](Slides/Slides-06-Managing_Validation_Projects)                          | 06: [Managing Validation Projects](Materials/Materials-06-Validation_Project_Management) |
 | 155 - 165 | **Internal R Packages**        | [R Packages](Slides/Slides-07-R_Packages)                          |  |
 | 165 - 180 | **Q&A / Panel Discussion**        |                          |   |
 
