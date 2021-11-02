@@ -1,70 +1,121 @@
-# setup ----
-
-# We have been a completed package with validation elements. 
-# Lets work with the validation report itself
-
 library(valtools)
-setwd(here::here("Materials/Materials-05-Validation_Report/simple.package"))
+setwd(file.path("Materials-05-Validation_Report",
+                "r_pharma_validation"))
+# Note: This set of exercises pick up where Materials 04 leave off.
+#       This answer key rely on a "fresh" version 
+#          that have been prepared by instructors and stored in the Materials 05 
+#          folder.
+
+########### Exercise: Add test case
+
+#### Action: 
+
+# 1. create test case file "test_case1.md" from {valtools} template
+?vt_use_test_case
+
+# 2. create the data verification file using the following code
+
+this_pp <- palmerpenguins::penguins[1:10,]
+dir.create("validation/testdata")
+write.csv(this_pp, file = "validation/testdata/rpharma_pp.csv")
+
+# 3. Replace lines 8 - 10 with the following content
+
+# + Read in the file `validation/testdata/rpharma_pp.csv` and save as `this_pp`. Verify that the variable "species" in `this_pp` is of class `character`.
+
+# 4. delete lines 4-5
+
+#### Discussion questions
+# 1. What file extension was automatically assigned to test_case1?
+# 2. What new folder was created?
+# 3. What happens if the username is not specified in the vt_use_* call?
+# 4. How does the template roxygen header structure differ between requirements
+#     and test cases?
+
+########### Exercise: Add test code
+
+#### Action: 
+
+# 1. create the test code file test_code1.md from {valtools} template
+?vt_use_test_code
 
 
-# Task 05 A ----
+# 3. Replace the value [TESTNUMBER] with "TC_A1"
 
-# Initiate a validation report for requirement adoption.
+# 4. Replace the value in line 8 with: 
 
-?vt_use_report
-
-# Generate the newly created Report
-
-?vt_validate_source
-
-# Examine the pdf file "/inst/validation/Requirement_Adoption_Report..."
-
-## Discussion: How is this different from the default template?
-## Discussion: How are we controlling which validation child files are included?
-## Discussion: Where does the report pdf save to? How is this different than using `vt_validate_report`?
+this_pp <- read.csv(vt_path(file.path("testdata", "rpharma_pp.csv")))
+testthat::expect_type(this_pp$species, "character")
 
 
-# Task 05 B: ----
+#### Discussion questions
+# 1. What file extension was automatically assigned to test_code1?
+# 2. What new folder was created?
+# 3. Why should the user different for authoring test code?
 
-# Switch to from Requirement Adoption report to a full validation report 
+########### Exercise: Create a validation report Rmd from scratch
 
-# Edit `/vignettes/validation/validation.yml`:
-#  - Replace `Requirement_Adoption.Rmd` with `validation.Rmd`
-#  - Replace `Requirement_Adoption_Report_{package}_v{version}_{date}` with `Validation_Report_{package}_v{version}_{date}`
-# Generate Report
+#### Action: 
 
-?vt_use_report
-?vt_validate_source
+# 1. Save a copy of the file "Requirement_report.Rmd" with the new filename
+#    "Validation_report.Rmd". You should now have two report rmd files, 
+#    "Requirement_report.Rmd" and  "Validation_report.Rmd".
 
-# Examine: pdf file "/inst/validation/Validation_Report_..."
+# 2. Open the file "Validation_report.Rmd" and update the document title to 
+#    "Validation Report".
 
-## Discussion: How is this different from the Requirement Adoption Report ?
+# 3. Add a new knitr chunk to include the Test case child file:
 
-# Task 05 C ----
+# ```{r test-case}
+# test_case_path <- file.path("validation", "test_cases")
+# vt_file(file.path(test_case_path, "test_case1.md"))
+# ```
 
-# Customize validation report by editing `/vignettes/validation.Rmd`, 
-#  chunk "traceability" by switching to `type = "wide"` and
-# adding $\LaTeX$ specification to hold position via 
-# `kableExtra::kable_styling(latex_options = "HOLD")`
-# Generate Report
+# 4. Add a new knitr chunk to include the test code child file:
 
-?vt_use_report
-?vt_validate_source
+# ```{r test-code}
+# test_code_path <- file.path("validation", "test_code")
+# vt_file(file.path(test_code_path, "test_code1.R"))
+# ```
 
-# Examine: pdf file "/inst/validation/Validation_Report_..."
+# 5. Add some markdown to separate sections:
 
-# Discussion: How does section 2.3 look different?
+# line 14: `# Case A`
+# before chunk "requirements": `## Requirement`
+# before chunk "test-case": `## Test case`
+# before chunk "test-code": `## Test result`
 
-# Task 05 D ---- 
+# 6. Render the requirement report by pressing the "knit" button
 
-# Redirect validation report output to a different location:
-# Edit `/vignettes/validation/validation.yml`:
-#   - Specify output directory as the new folder `reports` within `inst
-# Generate Report
+#### Discussion questions
+# 1. How is `vt_path` similar to `here::here()`?
+# 2. Review - How are we identifying test case and test code files? 
+#      What {valtools} function are we using?
+# 3. How does the structure of the Validation report differ from the 
+#      requirement report?
 
-?vt_use_report
-?vt_validate_source
 
-## Discussion: Where does the new pdf output render to? 
-## Discussion:Are there differences in behavior between RStudio Cloud vs. a local machine?
+########### Advanced/optional exercise: Render the validation report using {valtools} helper
+
+# Action
+# 
+# 1. set up the validation config file. In /validation/validation.yml (autogenerated via `vt_create_packet`)
+# update lines 4-5 to:
+#
+# report_rmd_name: Validation_report.Rmd
+# report_naming_format: Validation_Report_{date}
+#
+#
+# 2. Compile the report
+# vt_validate_report()
+
+#### Discussion questions
+# 1. How does this differ from creating the requirement report via 
+#    the knit button?
+
+########### Advanced/optional exercise: Update the validation report with a second requirement/test case/test code
+
+
+
+
 

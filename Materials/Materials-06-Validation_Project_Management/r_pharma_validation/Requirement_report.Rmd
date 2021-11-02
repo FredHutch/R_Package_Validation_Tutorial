@@ -1,0 +1,18 @@
+---
+title: "Requirement Report"
+author: "Validation Author"
+date: "10/18/2021"
+output: pdf_document
+---
+
+```{r setup, echo=FALSE, warning=FALSE}
+library(valtools)
+library(knitr)
+opts_chunk$set(echo = FALSE, 
+               results="asis")
+```
+
+```{r requirements}
+req_path <- file.path("validation", "requirements")
+vt_file(file.path(req_path, "req1.md"))
+```
