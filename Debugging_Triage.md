@@ -1,3 +1,15 @@
+## Navigation
+
+| Slide folder | Exercise folder |
+|:-------------|:--------------  |
+| Slides 01 | NA |
+| Slides 02 | NA |
+| Slides 03 | NA |
+| Slides 04 | Materials 04|
+| Slides 05 | Materials 05|
+| Slides 06 | Materials 06 |
+| Slides 07 | NA |
+
 ## Debugging
 
 When working through these slides and exercises, don't become discouraged if something does not work immediately or seems obtuse. Follow these instructions:
