@@ -10,6 +10,8 @@ basics of the R Package Validation Framework and its application using {valtools
 The training will show how to use the {valtools} package to create a validation
 packet as well as how to apply this to R package development.
 
+{valtools} can be found at: https://github.com/phuse-org/valtools
+
 
 |                                     |
 |-------------------------------------|
@@ -20,7 +22,7 @@ packet as well as how to apply this to R package development.
 ## Schedule & Materials
 
 Slides and exercises are grouped by section. Exercises are split into
-`Spartan` or `Verbose`, indicating the amount of supplementary
+`Sparse` or `Verbose`, indicating the amount of supplementary
 information provided. An answer key is also provided in the folder.
 
 | Time      | Section                              | Slides                                             | Exercises                       |
