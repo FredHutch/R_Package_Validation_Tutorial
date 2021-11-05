@@ -18,7 +18,7 @@ vt_create_packet("r_pharma_validation", open = FALSE)
 setwd("r_pharma_validation")
 vt_use_req("req1.md",
            username = "useR",
-           title = "programmer",
+           title = "Requirement 1",
            open = TRUE)
 
 # Paste the following text in line 7 of req1.md

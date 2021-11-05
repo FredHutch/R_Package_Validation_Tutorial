@@ -1,6 +1,9 @@
 library(valtools)
-setwd(file.path("Materials-05-Validation_Report",
+
+## set working directory back to the main project and then run:
+setwd(file.path("Materials","Materials-05-Validation_Report",
                 "r_pharma_validation"))
+
 # Note: This set of exercises pick up where Materials 04 leave off.
 #       This answer key rely on a "fresh" version 
 #          that have been prepared by instructors and stored in the Materials 05 
@@ -13,20 +16,20 @@ setwd(file.path("Materials-05-Validation_Report",
 # 1. create the file from {valtools} template
 vt_use_test_case("test_case1", 
                  username = "useR",
-                 title = "programmer",
+                 title = "Test Case 1",
                  open = TRUE)
 
-# 2. create the data verification file using the following code
+# 2. Replace lines 8 - 10 of test_case1.md with the following content (remove the leading `#`)
+
+# + Read in the file `validation/testdata/rpharma_pp.csv` and save as `this_pp`. Verify that the variable "species" in `this_pp` is of class `character`.
+
+# 3. delete lines 4-5 of test_case1.md 
+
+# 4. create the data verification file using the following code
 
 this_pp <- palmerpenguins::penguins[1:10,]
 dir.create("validation/testdata")
 write.csv(this_pp, file = "validation/testdata/rpharma_pp.csv")
-
-# 3. Replace lines 8 - 10 with the following content
-
-# + Read in the file `validation/testdata/rpharma_pp.csv` and save as `this_pp`. Verify that the variable "species" in `this_pp` is of class `character`.
-
-# 4. delete lines 4-5
 
 #### Discussion questions
 # 1. What file extension was automatically assigned to test_case1?

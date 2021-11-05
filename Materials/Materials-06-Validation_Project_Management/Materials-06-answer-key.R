@@ -1,5 +1,7 @@
 library(valtools)
-setwd(file.path("Materials-06-Validation_Report",
+
+## set working directory back to the main project and then run:
+setwd(file.path("Materials", "Materials-06-Validation_Project_Management",
                 "r_pharma_validation"))
 # Note: This set of exercises pick up where Materials 06 leave off.
 #       This answer key rely on a "fresh" version 
